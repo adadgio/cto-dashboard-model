@@ -1,1 +1,0 @@
-type IssueStatus = "Todo" | "Done"
