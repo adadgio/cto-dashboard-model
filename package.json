@@ -1,0 +1,24 @@
+{
+  "name": "@cto-dashboard-model/cto-dashboard-model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adadgio/cto-dashboard-model.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adadgio/cto-dashboard-model/issues"
+  },
+  "homepage": "https://github.com/adadgio/cto-dashboard-model#readme",
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  }
+}
