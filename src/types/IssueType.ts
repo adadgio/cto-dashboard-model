@@ -1,0 +1,1 @@
+type IssueType = "Bug" | "Feature";

@@ -1,0 +1,1 @@
+type IssueStatus = "Todo" | "Done"
