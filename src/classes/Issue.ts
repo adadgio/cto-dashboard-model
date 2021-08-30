@@ -1,15 +1,20 @@
+interface IssueConstructorType {
+  id: number;
+  name: string;
+  type: IssueType;
+  status: IssueStatus;
+}
 export default class Issue {
-    id!: number;
-    boardId!: number;
-    name!: string;
-    type: IssueType
-    status: IssueStatus
+  id!: number;
+  boardId!: number;
+  name!: string;
+  type: IssueType;
+  status: IssueStatus;
 
-    constructor(id: number, name: string, type: IssueType, status: IssueStatus) {
-      this.id = id;
-      this.name = name;
-      this.type = type;
-      this.status = status;
-    }
+  constructor(data: IssueConstructorType) {
+    this.id = data.id;
+    this.name = data.name;
+    this.type = data.type;
+    this.status = data.status;
   }
-  
+}

@@ -1,11 +1,17 @@
+interface SprintConstructorType {
+  id: number;
+  boardId: number;
+  name: string;
+}
+
 export default class Sprint {
   id!: number;
   boardId!: number;
   name!: string;
 
-  constructor(id: number, boardId: number, name: string) {
-    this.id = id;
-    this.boardId = boardId;
-    this.name = name;
+  constructor(data: SprintConstructorType) {
+    this.id = data.id;
+    this.boardId = data.boardId;
+    this.name = data.name;
   }
 }
