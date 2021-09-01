@@ -1,15 +1,15 @@
 interface IssueConstructorType {
   id: number;
   name: string;
-  type: "Bug" | "Feature";
-  status: "Todo" | "Done";
+  type: string;
+  status: string;
 }
 export default class Issue {
   id!: number;
   boardId: number | null;
   name!: string;
-  type: "Bug" | "Feature";
-  status: "Todo" | "Done";
+  type: string;
+  status: string;
 
   constructor(data: IssueConstructorType) {
     this.id = data.id;
