@@ -3,16 +3,17 @@ interface IssueConstructorType {
   name: string;
   type: string;
   status: string;
-  boardId: number | null;
   sprintId: number | null;
+  allSprintIds: string[];
+
 }
 export default class Issue {
   id!: number;
-  boardId: number | null;
   sprintId: number | null;
   name!: string;
   type: string;
   status: string;
+  allSprintIds: string[];
 
   constructor(data: IssueConstructorType) {
     this.id = data.id;
@@ -20,7 +21,7 @@ export default class Issue {
     this.type = data.type;
     this.status = data.status;
 
-    this.boardId = data.boardId;
     this.sprintId = data.sprintId;
+    this.allSprintIds = data.allSprintIds;
   }
 }
