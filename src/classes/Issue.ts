@@ -3,10 +3,13 @@ interface IssueConstructorType {
   name: string;
   type: string;
   status: string;
+  boardId: number | null;
+  sprintId: number | null;
 }
 export default class Issue {
   id!: number;
   boardId: number | null;
+  sprintId: string | null;
   name!: string;
   type: string;
   status: string;
@@ -16,5 +19,8 @@ export default class Issue {
     this.name = data.name;
     this.type = data.type;
     this.status = data.status;
+
+    this.boardId = data.boardId;
+    this.sprintId = data.sprintId;
   }
 }
