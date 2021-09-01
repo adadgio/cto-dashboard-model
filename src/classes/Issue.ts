@@ -9,7 +9,7 @@ interface IssueConstructorType {
 export default class Issue {
   id!: number;
   boardId: number | null;
-  sprintId: string | null;
+  sprintId: number | null;
   name!: string;
   type: string;
   status: string;
