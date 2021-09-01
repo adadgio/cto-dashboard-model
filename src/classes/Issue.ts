@@ -3,14 +3,14 @@ interface IssueConstructorType {
   name: string;
   type: string;
   status: string;
-  sprintId: number | null;
+  sprintId: string | null;
   allSprintIds: string[];
   projectId: string;
 
 }
 export default class Issue {
   id!: number;
-  sprintId: number | null;
+  sprintId: string | null;
   name!: string;
   type: string;
   status: string;
