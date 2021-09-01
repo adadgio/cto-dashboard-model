@@ -6,7 +6,7 @@ interface IssueConstructorType {
 }
 export default class Issue {
   id!: number;
-  boardId!: number;
+  boardId: number | null;
   name!: string;
   type: "Bug" | "Feature";
   status: "Todo" | "Done";
