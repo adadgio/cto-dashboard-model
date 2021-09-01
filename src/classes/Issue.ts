@@ -5,6 +5,7 @@ interface IssueConstructorType {
   status: string;
   sprintId: number | null;
   allSprintIds: string[];
+  projectId: string;
 
 }
 export default class Issue {
@@ -14,6 +15,7 @@ export default class Issue {
   type: string;
   status: string;
   allSprintIds: string[];
+  projectId: string;
 
   constructor(data: IssueConstructorType) {
     this.id = data.id;
@@ -23,5 +25,6 @@ export default class Issue {
 
     this.sprintId = data.sprintId;
     this.allSprintIds = data.allSprintIds;
+    this.projectId = data.projectId;
   }
 }
