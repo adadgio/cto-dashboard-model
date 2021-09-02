@@ -1,6 +1,6 @@
 interface SprintConstructorType {
   id: number;
-  boardId: number;
+  boardId?: number;
   projectId?: string;
   name: string;
 
@@ -11,7 +11,7 @@ interface SprintConstructorType {
 
 export default class Sprint {
   id!: number;
-  boardId!: number;
+  boardId?: number;
   projectId?: string;
   name!: string;
   startDate?: string;

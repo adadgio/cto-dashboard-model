@@ -1,6 +1,6 @@
 {
   "name": "@cto-dashboard-model/cto-dashboard-model",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "",
   "main": "index.ts",
   "scripts": {
