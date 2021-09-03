@@ -1,20 +1,30 @@
 interface IssueConstructorType {
   id: number;
   name: string;
-  type: "Bug" | "Feature";
-  status: "Todo" | "Done";
+  type: string;
+  status: string;
+  sprintId: string | null;
+  allSprintIds: string[];
+  projectId: string;
+
 }
 export default class Issue {
   id!: number;
-  boardId!: number;
+  sprintId: string | null;
   name!: string;
-  type: "Bug" | "Feature";
-  status: "Todo" | "Done";
+  type: string;
+  status: string;
+  allSprintIds: string[];
+  projectId: string;
 
   constructor(data: IssueConstructorType) {
     this.id = data.id;
     this.name = data.name;
     this.type = data.type;
     this.status = data.status;
+
+    this.sprintId = data.sprintId;
+    this.allSprintIds = data.allSprintIds;
+    this.projectId = data.projectId;
   }
 }
