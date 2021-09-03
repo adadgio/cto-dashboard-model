@@ -1,4 +1,5 @@
 interface ProjectConstructorType {
+  id: string;
   name: string;
   nbBugsTodo: number;
   nbBugsDone: number;
@@ -7,6 +8,7 @@ interface ProjectConstructorType {
 }
 
 export default class Project {
+  id!: string;
   name!: string;
   nbBugsTodo!: number;
   nbBugsDone!: number;
@@ -14,6 +16,7 @@ export default class Project {
   nbFeatureDone!: number;
 
   constructor(data: ProjectConstructorType) {
+    this.id = data.id;
     this.name = data.name;
     this.nbBugsTodo = data.nbBugsTodo;
     this.nbBugsDone = data.nbBugsDone;
